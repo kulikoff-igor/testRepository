@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Administrator tasks</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<nav class="navbar navbar-toggleable-md">
+    <div class="menu">
+        <i class="material-icons">date_range</i>
+        <div class="search">
+            <i class="material-icons">search</i>
+            <input type="text" class="form-control" placeholder="Search for...">
+        </div>
+        <i class="material-icons">note_add</i>
+
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-3 left-panel">
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    Все заплонированные
+                    <span class="badge badge-default badge-pill">14</span>
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    Сегодня
+                    <span class="badge badge-default badge-pill">2</span>
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    Следующие 7 дней
+                    <span class="badge badge-default badge-pill">1</span>
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    Выполненные задачи
+                    <span class="badge badge-default badge-pill">1</span>
+                </li>
+            </ul>
+        </div>
+        <div class="col-8 right-panel">
+            <h5 class="title"> Все заплонированные</h5>
+            <ul class="list-group">
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    <div class="task">
+                        <input class="form-check-input" type="checkbox">
+                        <p class="task-text">Сверстать этот ебучий сайт)</p>
+                        <span class="badge badge-info badge-pill ">сегодня</span>
+                    </div>
+
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    <div class="task">
+                        <input class="form-check-input" type="checkbox">
+                        <p class="task-text">
+                            Все еще ваерстать этот ебучий сайт)</p>
+                        <span class="badge badge-info badge-pill">сегодня</span>
+                    </div>
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    <div class="task">
+                        <input class="form-check-input" type="checkbox">
+                        <p class="task-text">
+                            Завтра поехать в колхоз</p>
+                        <span class="badge badge-info badge-pill">завтра</span>
+                    </div>
+                </li>
+                <li class="list-group-item justify-content-between list-group-item-action">
+                    <div class="task">
+                        <input class="form-check-input" type="checkbox">
+                        <p class="task-text">
+                            Уебать нахуй в армию на ебучие 37 суток и забыть все что делал сейчас)</p>
+                        <span class="badge badge-info badge-pill ">07.08.2017</span>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="add-task">
+                <div class="add-task-input-text">
+                    <input type="text" class="form-control"   placeholder="Данные по новой задаче">
+                    <input class="form-control" type="date"  id="date-input">
+
+                </div>
+                <div class="add-task-buttom">
+                    <button type="button" class="btn btn-sm btn-outline-success">Добавить задачу</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Отменить</button>
+
+
+                </div>
+            </div>
+            <a href="#" class="">
+                <i class="material-icons">note_add</i>
+                Добавить задачу</a>
+            <hr>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+        integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+</body>
+</html>
