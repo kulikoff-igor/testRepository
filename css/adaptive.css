@@ -1,0 +1,35 @@
+@media screen and(min-width: 1351px ) and (max-width: 1600px) {
+    .menu {
+        margin-left: 22%;
+        width: 56%;
+    }
+
+    .container {
+        margin-left: 22%;
+        width: 60%;
+    }
+}
+@media screen and  (min-width: 1000px) and ( max-width: 1350px ) {
+    .menu {
+        margin-left: 10%;
+        width: 80%;
+    }
+
+    .container {
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        margin-left: 2%;
+        width: 98%;
+    }
+
+    .container {
+        margin-left: 2%;
+        width: 98%;
+    }
+}
+
