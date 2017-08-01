@@ -57,7 +57,7 @@ body {
 }
 
 .left-panel {
-    height: 100vh;
+    height: 95vh;
     background-color: #fafafa;
     padding: 0px;
     padding-top: 30px;
@@ -65,7 +65,7 @@ body {
 }
 
 .right-panel {
-    height: 100vh;
+    height: 95vh;
     background-color: #ffffff;
 }
 
