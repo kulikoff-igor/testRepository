@@ -9750,6 +9750,18 @@ var _reactDom = __webpack_require__(98);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _LeftPanel = __webpack_require__(184);
+
+var _LeftPanel2 = _interopRequireDefault(_LeftPanel);
+
+var _ViewTask = __webpack_require__(185);
+
+var _ViewTask2 = _interopRequireDefault(_ViewTask);
+
+var _AddTask = __webpack_require__(186);
+
+var _AddTask2 = _interopRequireDefault(_AddTask);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9801,6 +9813,9 @@ var MainComponent = function (_React$Component) {
 }(_react2.default.Component);
 
 _reactDom2.default.render(_react2.default.createElement(MainComponent, null), document.getElementById('menu'));
+_reactDom2.default.render(_react2.default.createElement(_LeftPanel2.default, null), document.getElementById('left-panel'));
+_reactDom2.default.render(_react2.default.createElement(_ViewTask2.default, null), document.getElementById('view-task'));
+_reactDom2.default.render(_react2.default.createElement(_AddTask2.default, null), document.getElementById('add-task'));
 
 /***/ }),
 /* 82 */
@@ -22437,6 +22452,289 @@ var ReactDOMInvalidARIAHook = {
 
 module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 184 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var LeftPanel = function (_React$Component) {
+    _inherits(LeftPanel, _React$Component);
+
+    function LeftPanel() {
+        _classCallCheck(this, LeftPanel);
+
+        return _possibleConstructorReturn(this, (LeftPanel.__proto__ || Object.getPrototypeOf(LeftPanel)).apply(this, arguments));
+    }
+
+    _createClass(LeftPanel, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "ul",
+                { className: "list-group" },
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    "\u0412\u0441\u0435 \u0437\u0430\u043F\u043B\u043E\u043D\u0438\u0440\u043E\u0432\u0430\u043D\u043D\u044B\u0435",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "badge badge-default badge-pill" },
+                        "14"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    "\u0421\u0435\u0433\u043E\u0434\u043D\u044F",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "badge badge-default badge-pill" },
+                        "2"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    "\u0421\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0435 7 \u0434\u043D\u0435\u0439",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "badge badge-default badge-pill" },
+                        "1"
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    "\u0412\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u043D\u044B\u0435 \u0437\u0430\u0434\u0430\u0447\u0438",
+                    _react2.default.createElement(
+                        "span",
+                        { className: "badge badge-default badge-pill" },
+                        "1"
+                    )
+                )
+            );
+        }
+    }]);
+
+    return LeftPanel;
+}(_react2.default.Component);
+
+exports.default = LeftPanel;
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ViewTask = function (_React$Component) {
+    _inherits(ViewTask, _React$Component);
+
+    function ViewTask() {
+        _classCallCheck(this, ViewTask);
+
+        return _possibleConstructorReturn(this, (ViewTask.__proto__ || Object.getPrototypeOf(ViewTask)).apply(this, arguments));
+    }
+
+    _createClass(ViewTask, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "ul",
+                { className: "list-group" },
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "task" },
+                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
+                        _react2.default.createElement(
+                            "p",
+                            { className: "task-text" },
+                            "\u0421\u0432\u0435\u0440\u0441\u0442\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0435\u0431\u0443\u0447\u0438\u0439 \u0441\u0430\u0439\u0442)"
+                        ),
+                        _react2.default.createElement(
+                            "span",
+                            { className: "badge badge-info badge-pill " },
+                            "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "task" },
+                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
+                        _react2.default.createElement(
+                            "p",
+                            { className: "task-text" },
+                            "\u0412\u0441\u0435 \u0435\u0449\u0435 \u0432\u0430\u0435\u0440\u0441\u0442\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0435\u0431\u0443\u0447\u0438\u0439 \u0441\u0430\u0439\u0442)"
+                        ),
+                        _react2.default.createElement(
+                            "span",
+                            { className: "badge badge-info badge-pill" },
+                            "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "task" },
+                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
+                        _react2.default.createElement(
+                            "p",
+                            { className: "task-text" },
+                            "\u0417\u0430\u0432\u0442\u0440\u0430 \u043F\u043E\u0435\u0445\u0430\u0442\u044C \u0432 \u043A\u043E\u043B\u0445\u043E\u0437"
+                        ),
+                        _react2.default.createElement(
+                            "span",
+                            { className: "badge badge-info badge-pill" },
+                            "\u0437\u0430\u0432\u0442\u0440\u0430"
+                        )
+                    )
+                ),
+                _react2.default.createElement(
+                    "li",
+                    { className: "list-group-item justify-content-between list-group-item-action" },
+                    _react2.default.createElement(
+                        "div",
+                        { className: "task" },
+                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
+                        _react2.default.createElement(
+                            "p",
+                            { className: "task-text" },
+                            "\u0423\u0435\u0431\u0430\u0442\u044C \u043D\u0430\u0445\u0443\u0439 \u0432 \u0430\u0440\u043C\u0438\u044E \u043D\u0430 \u0435\u0431\u0443\u0447\u0438\u0435 37 \u0441\u0443\u0442\u043E\u043A \u0438 \u0437\u0430\u0431\u044B\u0442\u044C \u0432\u0441\u0435 \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u043B \u0441\u0435\u0439\u0447\u0430\u0441)"
+                        ),
+                        _react2.default.createElement(
+                            "span",
+                            { className: "badge badge-info badge-pill " },
+                            "07.08.2017"
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return ViewTask;
+}(_react2.default.Component);
+
+exports.default = ViewTask;
+
+/***/ }),
+/* 186 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var AddTask = function (_React$Component) {
+    _inherits(AddTask, _React$Component);
+
+    function AddTask() {
+        _classCallCheck(this, AddTask);
+
+        return _possibleConstructorReturn(this, (AddTask.__proto__ || Object.getPrototypeOf(AddTask)).apply(this, arguments));
+    }
+
+    _createClass(AddTask, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "div",
+                { className: "add-task" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "add-task-input-text" },
+                    _react2.default.createElement("input", { type: "text", "class": "form-control", placeholder: "\u0414\u0430\u043D\u043D\u044B\u0435 \u043F\u043E \u043D\u043E\u0432\u043E\u0439 \u0437\u0430\u0434\u0430\u0447\u0435" }),
+                    _react2.default.createElement("input", { className: "form-control", type: "date", id: "date-input" })
+                ),
+                _react2.default.createElement(
+                    "div",
+                    { className: "add-task-buttom" },
+                    _react2.default.createElement(
+                        "button",
+                        { type: "button", className: "btn btn-sm btn-outline-success" },
+                        "\u0414\u043E\u0431\u0430\u0432\u0438\u0442\u044C \u0437\u0430\u0434\u0430\u0447\u0443"
+                    ),
+                    _react2.default.createElement(
+                        "button",
+                        { type: "button", className: "btn btn-sm btn-outline-secondary" },
+                        "\u041E\u0442\u043C\u0435\u043D\u0438\u0442\u044C"
+                    )
+                )
+            );
+        }
+    }]);
+
+    return AddTask;
+}(_react2.default.Component);
+
+exports.default = AddTask;
 
 /***/ })
 /******/ ]);

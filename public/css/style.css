@@ -121,6 +121,9 @@ body {
     align-items: stretch;
     margin-bottom: 5px;
 }
+.add-task-input-text  input{
+   width: 100%;
+}
 .add-task{
     margin-top: 15px;
     margin-bottom: 15px;

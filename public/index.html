@@ -17,75 +17,16 @@
 </nav>
 <div class="container">
     <div class="row">
-        <div class="col-3 left-panel">
-            <ul class="list-group">
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    Все заплонированные
-                    <span class="badge badge-default badge-pill">14</span>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    Сегодня
-                    <span class="badge badge-default badge-pill">2</span>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    Следующие 7 дней
-                    <span class="badge badge-default badge-pill">1</span>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    Выполненные задачи
-                    <span class="badge badge-default badge-pill">1</span>
-                </li>
-            </ul>
+        <div class="col-3 left-panel" id="left-panel">
+
         </div>
-        <div class="col-9 right-panel">
+        <div class="col-9 right-panel" >
             <h5 class="title"> Все заплонированные</h5>
-            <ul class="list-group">
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <div class="task">
-                        <input class="form-check-input" type="checkbox">
-                        <p class="task-text">Сверстать этот ебучий сайт)</p>
-                        <span class="badge badge-info badge-pill ">сегодня</span>
-                    </div>
+            <div id="view-task">
 
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <div class="task">
-                        <input class="form-check-input" type="checkbox">
-                        <p class="task-text">
-                            Все еще ваерстать этот ебучий сайт)</p>
-                        <span class="badge badge-info badge-pill">сегодня</span>
-                    </div>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <div class="task">
-                        <input class="form-check-input" type="checkbox">
-                        <p class="task-text">
-                            Завтра поехать в колхоз</p>
-                        <span class="badge badge-info badge-pill">завтра</span>
-                    </div>
-                </li>
-                <li class="list-group-item justify-content-between list-group-item-action">
-                    <div class="task">
-                        <input class="form-check-input" type="checkbox">
-                        <p class="task-text">
-                            Уебать нахуй в армию на ебучие 37 суток и забыть все что делал сейчас)</p>
-                        <span class="badge badge-info badge-pill ">07.08.2017</span>
-                    </div>
-                </li>
-            </ul>
+            </div>
+            <div id="add-task">
 
-            <div class="add-task">
-                <div class="add-task-input-text">
-                    <input type="text" class="form-control" placeholder="Данные по новой задаче">
-                    <input class="form-control" type="date" id="date-input">
-
-                </div>
-                <div class="add-task-buttom">
-                    <button type="button" class="btn btn-sm btn-outline-success">Добавить задачу</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Отменить</button>
-
-
-                </div>
             </div>
             <a href="#" class="">
                 <i class="material-icons">note_add</i>

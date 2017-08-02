@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import LeftPanel from './LeftPanel.js'
+import ViewTask from './ViewTask.js'
+import AddTask from './AddTask.js'
 
 class MainComponent extends React.Component {
 
     render() {
-        return(
+        return (
             <div className="menu">
                 <i className="material-icons">date_range</i>
                 <div className="search">
@@ -18,5 +21,14 @@ class MainComponent extends React.Component {
 }
 
 ReactDOM.render(
-    <MainComponent/>,document.getElementById('menu')
-)
+    <MainComponent/>, document.getElementById('menu')
+);
+ReactDOM.render(
+    <LeftPanel/>, document.getElementById('left-panel')
+);
+ReactDOM.render(
+    <ViewTask/>, document.getElementById('view-task')
+);
+ReactDOM.render(
+    <AddTask/>, document.getElementById('add-task')
+);
