@@ -9754,9 +9754,9 @@ var _LeftPanel = __webpack_require__(184);
 
 var _LeftPanel2 = _interopRequireDefault(_LeftPanel);
 
-var _ViewTask = __webpack_require__(185);
+var _TaskList = __webpack_require__(187);
 
-var _ViewTask2 = _interopRequireDefault(_ViewTask);
+var _TaskList2 = _interopRequireDefault(_TaskList);
 
 var _AddTask = __webpack_require__(186);
 
@@ -9814,7 +9814,7 @@ var MainComponent = function (_React$Component) {
 
 _reactDom2.default.render(_react2.default.createElement(MainComponent, null), document.getElementById('menu'));
 _reactDom2.default.render(_react2.default.createElement(_LeftPanel2.default, null), document.getElementById('left-panel'));
-_reactDom2.default.render(_react2.default.createElement(_ViewTask2.default, null), document.getElementById('view-task'));
+_reactDom2.default.render(_react2.default.createElement(_TaskList2.default, null), document.getElementById('view-task'));
 _reactDom2.default.render(_react2.default.createElement(_AddTask2.default, null), document.getElementById('add-task'));
 
 /***/ }),
@@ -22543,131 +22543,7 @@ var LeftPanel = function (_React$Component) {
 exports.default = LeftPanel;
 
 /***/ }),
-/* 185 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(82);
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var ViewTask = function (_React$Component) {
-    _inherits(ViewTask, _React$Component);
-
-    function ViewTask() {
-        _classCallCheck(this, ViewTask);
-
-        return _possibleConstructorReturn(this, (ViewTask.__proto__ || Object.getPrototypeOf(ViewTask)).apply(this, arguments));
-    }
-
-    _createClass(ViewTask, [{
-        key: "render",
-        value: function render() {
-            return _react2.default.createElement(
-                "ul",
-                { className: "list-group" },
-                _react2.default.createElement(
-                    "li",
-                    { className: "list-group-item justify-content-between list-group-item-action" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "task" },
-                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
-                        _react2.default.createElement(
-                            "p",
-                            { className: "task-text" },
-                            "\u0421\u0432\u0435\u0440\u0441\u0442\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0435\u0431\u0443\u0447\u0438\u0439 \u0441\u0430\u0439\u0442)"
-                        ),
-                        _react2.default.createElement(
-                            "span",
-                            { className: "badge badge-info badge-pill " },
-                            "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "li",
-                    { className: "list-group-item justify-content-between list-group-item-action" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "task" },
-                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
-                        _react2.default.createElement(
-                            "p",
-                            { className: "task-text" },
-                            "\u0412\u0441\u0435 \u0435\u0449\u0435 \u0432\u0430\u0435\u0440\u0441\u0442\u0430\u0442\u044C \u044D\u0442\u043E\u0442 \u0435\u0431\u0443\u0447\u0438\u0439 \u0441\u0430\u0439\u0442)"
-                        ),
-                        _react2.default.createElement(
-                            "span",
-                            { className: "badge badge-info badge-pill" },
-                            "\u0441\u0435\u0433\u043E\u0434\u043D\u044F"
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "li",
-                    { className: "list-group-item justify-content-between list-group-item-action" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "task" },
-                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
-                        _react2.default.createElement(
-                            "p",
-                            { className: "task-text" },
-                            "\u0417\u0430\u0432\u0442\u0440\u0430 \u043F\u043E\u0435\u0445\u0430\u0442\u044C \u0432 \u043A\u043E\u043B\u0445\u043E\u0437"
-                        ),
-                        _react2.default.createElement(
-                            "span",
-                            { className: "badge badge-info badge-pill" },
-                            "\u0437\u0430\u0432\u0442\u0440\u0430"
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "li",
-                    { className: "list-group-item justify-content-between list-group-item-action" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "task" },
-                        _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
-                        _react2.default.createElement(
-                            "p",
-                            { className: "task-text" },
-                            "\u0423\u0435\u0431\u0430\u0442\u044C \u043D\u0430\u0445\u0443\u0439 \u0432 \u0430\u0440\u043C\u0438\u044E \u043D\u0430 \u0435\u0431\u0443\u0447\u0438\u0435 37 \u0441\u0443\u0442\u043E\u043A \u0438 \u0437\u0430\u0431\u044B\u0442\u044C \u0432\u0441\u0435 \u0447\u0442\u043E \u0434\u0435\u043B\u0430\u043B \u0441\u0435\u0439\u0447\u0430\u0441)"
-                        ),
-                        _react2.default.createElement(
-                            "span",
-                            { className: "badge badge-info badge-pill " },
-                            "07.08.2017"
-                        )
-                    )
-                )
-            );
-        }
-    }]);
-
-    return ViewTask;
-}(_react2.default.Component);
-
-exports.default = ViewTask;
-
-/***/ }),
+/* 185 */,
 /* 186 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -22735,6 +22611,137 @@ var AddTask = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = AddTask;
+
+/***/ }),
+/* 187 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Task = __webpack_require__(188);
+
+var _Task2 = _interopRequireDefault(_Task);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var TaskList = function (_React$Component) {
+    _inherits(TaskList, _React$Component);
+
+    function TaskList() {
+        _classCallCheck(this, TaskList);
+
+        return _possibleConstructorReturn(this, (TaskList.__proto__ || Object.getPrototypeOf(TaskList)).apply(this, arguments));
+    }
+
+    _createClass(TaskList, [{
+        key: 'render',
+        value: function render() {
+            var list = [{
+                textTask: "Сверстать этот ебучий сайт)",
+                dateTask: "сегодня"
+            }, {
+                textTask: "Уебать нахуй в армию на ебучие 37 суток и забыть все что делал сейчас)",
+                dateTask: "07.08.2017"
+            }, {
+                textTask: "Уебать нахуй в армию на ебучие 37 суток и забыть все что делал сейчас)",
+                dateTask: "07.08.2017"
+            }];
+
+            return _react2.default.createElement(
+                'ul',
+                { className: 'list-group' },
+                list.map(function (task, index) {
+                    return _react2.default.createElement(_Task2.default, { textTask: task.textTask, dateTask: task.dateTask });
+                })
+            );
+        }
+    }]);
+
+    return TaskList;
+}(_react2.default.Component);
+
+exports.default = TaskList;
+
+/***/ }),
+/* 188 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(82);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Task = function (_React$Component) {
+    _inherits(Task, _React$Component);
+
+    function Task() {
+        _classCallCheck(this, Task);
+
+        return _possibleConstructorReturn(this, (Task.__proto__ || Object.getPrototypeOf(Task)).apply(this, arguments));
+    }
+
+    _createClass(Task, [{
+        key: "render",
+        value: function render() {
+            return _react2.default.createElement(
+                "li",
+                { className: "list-group-item justify-content-between list-group-item-action" },
+                _react2.default.createElement(
+                    "div",
+                    { className: "task" },
+                    _react2.default.createElement("input", { className: "form-check-input", type: "checkbox" }),
+                    _react2.default.createElement(
+                        "p",
+                        { className: "task-text" },
+                        this.props.textTask
+                    ),
+                    _react2.default.createElement(
+                        "span",
+                        { className: "badge badge-info badge-pill " },
+                        this.props.dateTask
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Task;
+}(_react2.default.Component);
+
+exports.default = Task;
 
 /***/ })
 /******/ ]);
